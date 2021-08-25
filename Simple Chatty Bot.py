@@ -44,7 +44,7 @@ def test():
     correct_answer = 2
     user_answer = int(input())
     while True:
-        if user_answer == 2:
+        if user_answer == correct_answer:
             print('Completed, have a nice day!')
         else:
             print('Please, try again.')
