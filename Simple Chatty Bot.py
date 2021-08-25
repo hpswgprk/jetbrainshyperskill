@@ -42,12 +42,14 @@ def test():
     4. To interrupt the execution of a program.
     ''')
     correct_answer = 2
-    user_answer = int(input())
     while True:
-        if user_answer == correct_answer:
-            print('Completed, have a nice day!')
-        else:
+        user_answer = int(input())
+        if user_answer != correct_answer:
             print('Please, try again.')
+            user_answer = int(input())
+        else:
+            print('Completed, have a nice day!')
+            break
 
 def end():
     print('Congratulations, have a nice day!')
